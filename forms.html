@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label and input for First Name LAst Name Adress Zip Code</title>
+</head>
+<body>
+    <form>
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" placeholder="First Name" required>
+        <br>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+        <br>
+        <label for="addr">Address</label>
+        <input type="text" id="addr" name="addr" placeholder="Street Address 1" required>
+        <br>
+        <label for="pno"> Contact Number</label>
+        <input type="text" id="pno" name="pno" placeholder="(623)-209-8068" required>
+        <br>
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" placeholder="Enter Your Age" min="6" max="18" required>
+        <br>
+        <label for="email">Student Email</label>
+        <input type="email" id="email" name="email" placeholder="studentname@domain.org" required>
+        <br>
+        <label for="password">Create Password</label>
+        <input type="password" id="password" name="password" placeholder="password" required>
+        <br>
+        <label>Gender</label>
+        <br>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="Gender" required>
+        <br>
+        <label for="Female">Female</label>
+        <input type="radio" id="Female" name="Gender" required>
+        </form>
+
+        <form>
+            <label>Interests:</label><br>
+                <input type="checkbox" id="coding" name="interest" value="coding">
+                <label for="coding">Coding</label><br>
+                <input type="checkbox" id="music" name="interest" value="music">
+                <label for="music">Music</label><br>
+                <input type="checkbox" id="sports" name="interest" value="sports">
+                <label for="sports">Sports</label>
+        </form>
+
+        <form>
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="us">United States</option>
+            <option value="ca">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="au">Australia</option>
+            </select>
+        </form>
+
+        <form>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50"
+            placeholder="Enter your message here..."></textarea>
+        </form>
+        
+        <form>
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+        </form>
+
+        <form>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+        </form>
+        <form>
+            <button type="submit">Submit</button>
+        </form>
+</body>
+</html>
